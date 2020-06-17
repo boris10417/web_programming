@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hello Javascript</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="main.js"></script>
+        <script src="data.js"></script>
+    </head>
+    <body>
+        <h1>接水管遊戲</h1>
+        <p>列數:(數字必須>=3)
+        <input type="number" id="rows"></p>
+        <p>行數:(數字必須>=3)
+        <input type="number" id="cols"></p>
+        <p><input type="button" id ="level_create" value="產生關卡"></p>
+        <p><span id="timer_display">時間限時:10 秒</span></p>
+        <div id ="matrix">                
+        </div>
+        <div id="block">
+        <input type="button" id ="game_start" value="開始遊戲">
+        </div>
+    </body>
+</html>

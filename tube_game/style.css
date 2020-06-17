@@ -1,0 +1,46 @@
+body{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+p{
+    margin:10px 10px 10px 10px;
+}
+
+#matrix{
+    border-style: none; 
+    margin:auto;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    padding:20px 15px;
+    box-sizing: border-box;
+}
+#block{
+    margin:10px auto;
+    padding:0px;
+}
+
+#game_start{
+    margin:10px;
+
+    display: none; 
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    
+}
+
+#timer_display{
+    margin:10px auto;
+    color: green;
+    font-size: 40px;
+}
+
+#readme{
+    margin: auto;
+    color: brown;
+    font-size: 24px;
+    text-align:left;
+    width :350px;    
+}

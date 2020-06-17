@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="tube_game/style.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Carousel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="random-select.html">RandomSelect</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="club-table.html">ClubTable</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mind-test.html">MindTest</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rpg.html">RPG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="player.html">YouTubePlayer</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="tube-game.html">TubeGame</a>
+            </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+        <h1>接水管遊戲</h1>
+        <p>列數:(數字必須>=3)
+        <input type="number" id="rows"></p>
+        <p>行數:(數字必須>=3)
+        <input type="number" id="cols"></p>
+        <p>難度:
+            <select id="difficulty">
+                <option value="easy">簡單啦</option>
+                <option value="normal">普通啦</option>
+                <option value="hard">太難啦</option>
+                <option value="really">你確定?</option>
+            </select>
+        </p>
+        <p><input type="button" id ="level_create" value="產生關卡"></p>    
+        <p id="readme">遊戲說明:<br>左邊是起點，右邊是終點，你的目標是將中間水管轉轉，然後讓起點與終點連通!懂了嗎?? </p>   
+        <p><span id="timer_display"></span></p>
+        <div id="block">
+            <input type="button" id ="game_start" value="開始遊戲">
+        </div>
+        <div id ="matrix">                
+        </div>
+      
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="assets/js/vendor/holder.min.js"></script>
+    <script src="tube_game/main.js"></script>
+
+  </body>
+</html>
